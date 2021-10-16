@@ -1,0 +1,892 @@
+/*.div2 {
+  width: 300px;
+  height: 100px;
+  padding: 50px;
+  border: 1px solid red;
+  box-sizing: border-box; Note: using box-sizing: border-box to make box looks properly for many form elements.
+} */
+html 
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: Raleway;
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+ header
+{
+  padding: 0px 20px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  text-decoration: none;
+  color: blue;
+  padding-top: 30px;
+}
+
+.logo-container {
+  margin-right: 40%;
+}
+
+#signup {
+  font-weight: bold;
+}
+
+.nav .nav__link {
+  color: black;
+  margin-right: -120px;
+}
+
+.nav__link:active {
+  border-top: 3px solid blue;
+  color: blue;
+}
+
+div a:hover
+{
+  color: #F2F2F2;
+}
+/* Create search box */
+.search-box
+{
+  margin-bottom: 10px; 
+}
+.icon1
+{
+  font-size: .85rem;
+  background-color: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  padding: 10px 18px;
+}
+input
+{
+  font-size: .85rem;
+  padding: 8px;
+  border: 1px solid #F2F2F2;
+  margin-left: -5px; 
+}
+::placeholder
+{
+  color: black;
+  font-weight: bold;
+}
+.desktop--btn
+{
+  font-size: .85rem;
+  color: white;
+  background-color: #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  padding: 8.5px 15px;
+  border-style: none;
+  margin-left: -5px;
+}
+.mobile--btn
+{
+  display: none;
+}
+
+
+/* Create filters */
+.filter {
+  display: flex;
+  /* default font-size on browsers is usually 16px */
+  margin-bottom: 0px; /*  maybe need to remove out*/
+}
+
+
+.filter__heading {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 20px 0 0;
+  padding-top: 16px;
+}
+.filter__wrap
+{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.filter__btn {
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 25px;
+  padding: 0;
+  margin: 12px;
+  
+}
+.filter__btn:hover
+{
+  color: white;
+  background-color: #0065FC;
+}
+
+.filter__text {
+  /* border: 1px solid green; */
+  padding: 0 15px 0 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.filter__icon {
+  font-size: 0.85rem;
+  background-color: #deebff;
+  color: #0065FC;
+  height: 12px;
+  width: 30px;
+  border-radius: 50% ;
+  text-align: center;
+  padding: 8px 0px;
+  margin-left: -2px;
+}
+
+
+.info
+{
+  display: flex;
+  margin-bottom: 10px; 
+}
+.info__icon
+ {
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  padding: 3px 7px 0px;
+  font-size: .6rem;
+  color: #0065FC;
+  margin-bottom: 13px; /* use margin bottom to make circle "border-radius:50%" when it work with "display:inline-block;"*/
+  margin-top: 3px;
+}
+
+
+
+.info__text 
+{
+  width: 329px; /* use "px" to make width stay hard*/
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .8rem;
+  padding-top: 5px;
+  margin-left: 8px; 
+}
+/*Main Section*/
+/* Accommodations areas */
+a 
+{
+  text-decoration: none;
+}
+.top-section-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.accom {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 63%; /* percentage width of parent container */
+}
+
+/* this is the primary use of a div - we often need to put css on a collection of elements, but the div will not be seen by screen-readers */
+.accom__card-wrap {
+  display: flex; /* default flex-direction: row */
+  flex-wrap: wrap; /* wraps the elements like words in a paragraph */
+  justify-content: space-between;
+  /*border: 1px solid red;*/
+}
+
+.accom__card {
+  background-color:white;
+  padding: 5px;
+  border-radius: 15px;
+  width: 30%;
+  /*color: lightgrey;*/
+  margin-bottom: 20px;
+}
+
+/* this CSS selector means go find img tags inside any containers with the class .accom__card */
+.accom__card img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  object-fit: cover;
+  /* object-position: bottom left; */
+  height: 99px; /* need a hard-coded pixel height */
+}
+
+.accom__text-wrap 
+{
+  color: black;
+  font-size: .75rem;
+  margin-left: 15px;
+  margin-bottom: 7px;
+}
+
+/* Most popular areas */
+.popular {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 28%; /* percentage width of parent container */
+ 
+}
+
+.pop__heading {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.pop__heading i {
+  font-size: 19px;
+  margin-block-start: 0.84em;
+  margin-block-end: 0.84em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+}
+
+.pop__card-wrap {
+  display: flex; /* default flex-direction: row */
+  flex-wrap: wrap; /* wraps the elements like words in a paragraph */
+  justify-content: space-between;
+  /*border: 1px solid red;*/
+}
+
+.pop__card {
+  display: flex;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+.pop__card img {
+  border-radius: 15px 0px 0px 15px;
+  width: 50%;
+  object-fit: cover;
+  /* object-position: bottom left; */
+  height: 145px; /* need a hard-coded pixel height */
+}
+.pop__text-wrap *{
+  margin: 0px;
+}
+.pop__text-wrap{
+  font-size: .5rem;
+  margin-left: 20px;
+  margin-top: 10px;
+  flex-wrap: wrap; 
+}
+.pop__text-wrap h3{
+  height: 45%;
+}
+.pop__text-wrap p
+{
+  height: 35%; 
+}
+
+.starscolor
+{
+  color: #0065FC; 
+}
+
+/* Acivities areas */
+
+.activ {
+  margin-top: 10px;
+  padding: 10px 20px;
+  height: auto;
+}
+
+.activ__wrap {
+  display: flex;
+  justify-content: space-between;
+  /*border: 1px solid red;*/
+}
+.activ__card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px lightgray;
+  width: 23%;
+  height: 350px;
+}
+
+.activ__title--card
+{
+  color: black;
+  font-size: 0.75rem;
+  margin-left: 20px;
+}
+.activ__wrap--stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23%;
+  height: auto;
+}
+
+.activ__card--stack {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px lightgray;
+  width: 100%;
+}
+
+.activ__img--tall {
+  object-fit: cover;
+  width: 100%;
+  height: 310px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#activ--2nd {
+  object-fit: cover;
+  width: 100%;
+  height: 175px;
+  border-radius: 15px 15px 0px 0px;
+}
+#activ--3rd {
+  object-fit: cover;
+  width: 100%;
+  height: 80px;
+  border-radius: 15px 15px 0px 0px;
+}
+#activ--5th {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px 15px 0px 0px;
+}
+#activ--6th {
+  object-fit: cover;
+  width: 100%;
+  height: 130px;
+  border-radius: 15px 15px 0px 0px;
+}
+/*Foot Section*/
+.foot__wrap{ 
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 30px;
+}
+.foot__text-wrap{
+  margin-left: 150px;
+}
+
+/* Respondsive */
+/* Tablet*/
+@media all and (min-width: 401px) and (max-width: 775px)
+{
+
+  .nav .nav__link 
+  {
+    margin-right: 0px;
+  }
+  .filter
+  {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .filter__heading
+  {
+    text-align: start;
+    margin-right: 0px;
+  }
+  .filter__btn
+  {
+    margin: 10px 25px 10px 0;
+  }
+  .filter__text
+  {
+    padding: 0 20px 0 10px;
+    font-size: 0.9rem;
+  }
+  .info__icon
+  {
+    padding: 3px 7px 6px;
+  }
+  .info__text 
+  {
+    width: 70%; 
+    font-size: 0.8rem;
+  }
+  .top-section-wrap
+  {
+    display: flex;
+    flex-direction: column-reverse;  
+    padding: 0px;
+  }
+
+  .popular 
+  {
+    background-color: #6495ed;
+    width: 95%; /* percentage width of parent container */
+    padding: 0px 20px 20px;
+    margin: 0px;
+  }  
+  .pop__card
+  {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin-bottom: 0px;
+  }
+  .tablet__popcard
+  {   
+    width: 28%;
+  }
+  .tablet__popcard2
+  {   
+    width: 35%;
+  }
+  .pop__card img 
+  {  
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 160px;
+  }
+  .pop__card-wrap 
+  {
+    display: flex; /* default flex-direction: row */
+    flex-flow: row; /* wraps the elements like words in a paragraph */
+    justify-content: space-between;
+    height: 265px;
+  }
+  
+  .pop__text-wrap
+  {
+    margin: 10px;
+  }
+
+  .pop__text--wrap-margin
+  {
+    margin: 5px 0px 40px;
+  }
+  .accom
+  {
+    width: 94.5%;
+    background-color: white;
+    margin-top: 10px;
+    padding: 0px 20px;
+  }
+  .accom__card
+  {
+    width: 48%;
+    box-shadow: 5px 5px 5px darkgray;
+  }
+  .accom__card img
+  {
+    height: 140px;
+  }
+
+  .activ
+  {
+    height: auto;
+    padding: 0px 20px 20px;
+  }
+  .activ__wrap
+  {
+    flex-wrap: wrap;
+    margin-left: -20px;
+  }
+  .tablet__activcard1
+  {
+    order: 1;
+    margin-left: 20px;
+    
+  }
+  .tablet__activcard2
+  {
+    order: 3;
+    margin-top: 20px;
+  }
+  .tablet__activcard3
+  {
+    order: 2;
+  }
+  .tablet__activcard4
+  {
+    order: 4;
+    margin-top: 20px;
+  }
+  
+  
+  .activ__card
+  {
+    width: 47.5%;
+    height: 215px;
+    box-shadow: 5px 5px 5px darkgray;
+  }
+  .activ__wrap--stack
+  {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 215px;
+  }
+  .activ__card--stack
+  {  
+    height: auto;
+    margin-left: 20px;
+  } 
+  .activ__img--tall
+  {
+    height: 165px;
+  }
+  #activ--2nd
+  {
+    height: 165px;
+  }
+  #activ--3rd
+  {
+    height: 165px;
+    
+  }
+  #activ--5th
+  {
+    height: 165px;
+  }
+  #activ--6th
+  {
+    height: 165px;  
+  }
+  .activ__title--card
+  {
+    font-size: 0.9rem;
+    color: black;
+  }
+  /* Tablet Foot Section */
+  .foot__wrap 
+  {
+    margin-top: 0px;
+    justify-content: space-between;
+  }
+  .foot__text-wrap
+  {
+    margin-left: 0px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 400px)
+{
+  body
+  {
+    font-size: 14px;
+  }
+  header
+  {
+    margin: 0px 0px 30px ;
+  }
+  nav a:nth-child(1)
+  {
+    margin: 0px;
+    order: 1;
+  }
+  nav a:nth-child(2)
+  {
+    order: 3;
+
+  }
+  nav a:nth-child(3)
+  {
+    order: 4;
+  }
+  nav a:nth-child(4)
+  {
+    order: 2;
+    
+  }
+
+  .nav 
+  {
+    flex-wrap: wrap;  
+  }
+  .nav a 
+  {
+    display: inline-block;
+    width: 40%;
+    padding-bottom: 15px;
+  }
+  .nav .nav__link
+  {
+    text-align: center;
+    border-bottom: 3px solid gray;
+    margin: 0;
+    width: 50%;
+    padding: 15px 0px;
+  }
+
+  #signup
+  {
+    text-align: center;
+    margin-right: -28px;
+  }
+  .nav .logo-container
+  {
+    padding: 10px;
+  }
+  .nav__link:active {
+    border-bottom: 3px solid blue;
+    color: blue;
+    border-top: none;
+  }
+  
+
+  /* Search Button Section */
+  
+  /*.search-box*/
+  .search-box
+  {
+    margin: 0px;
+  }
+  .icon1
+  {
+    font-size: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    padding: 13px 18px;
+  }
+  input
+  {
+    font-size: 1rem;
+    padding: 11px;
+    border: 1px solid #F2F2F2;
+    margin-left: -5px; 
+  } 
+  .desktop--btn
+  {
+    display: none;
+  }                                                     
+  .mobile--btn
+  {
+    display: inline-flex;
+    background-color: #0065FC ;  
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px 10px;
+    width:15%;
+    height: 40px;
+    padding: 10px ;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+  }      
+  .icon2
+  {
+    background-color: #0065FC;
+    color: white;
+  }  
+  /*Filters Mobile*/
+
+  .filter 
+  {
+    display: flex; /* default font-size on browsers is usually 16px */
+    flex-direction: column;
+    margin: 0px;
+
+  }
+  .filter__heading
+  {
+    text-align: start;
+    
+  }
+  .filter__btn
+  {
+    margin: 3px 3px 10px 0;
+  }
+  #filter__text
+  {
+    padding-right: 40px;
+  }
+
+  .filter__text {
+    /* border: 1px solid green; */
+    padding: 0 20px 0 10px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .filter__icon {
+    background-color: lightblue;
+    height: 15px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
+    margin-left: -3px;
+  }
+  
+  section div button:nth-child(1)
+  {
+    order: 1;
+  }
+  section div button:nth-child(2)
+  {
+    order: 3;
+
+  }
+  section div button:nth-child(3)
+  {
+    order: 2;
+    margin-left: 20px;
+  }
+  section div button:nth-child(4)
+  {
+    order: 4;
+    margin-bottom: 10px;
+  }
+  div i
+  {
+    font-size: 1rem;
+    background-color: white;
+    
+  }
+  .info__icon
+  {
+    font-size: .65rem;
+    padding: 6px 11px 8px;
+  }
+
+  .info__text 
+  {
+    width: 269px;
+    padding-top: 8px;
+  }
+ 
+  /* Accommodations areas */
+  .top-section-wrap
+  {
+    flex-direction: column-reverse;
+    padding: 0px;
+    margin: 0px;
+  }
+  .accom
+  {
+    width: 90%;
+    background-color: white;
+    padding: 0px 20px;
+  }
+  .accom__card 
+  {
+    width: 95%;
+    box-shadow: 5px 5px 5px 5px lightgray;
+  }
+  .accom__card-wrap 
+  {
+    display: flex; /* default flex-direction: row */
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .accom__text-wrap
+  {
+    font-size: 12px;
+    color: black;
+  }
+  div i
+  {
+    font-size: 12px;
+  }
+  /* Most popular areas */
+  .popular
+  {
+    width: 90%;
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    padding: 0px 20px;
+  }
+  .pop__heading i 
+  {
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
+    margin-inline-start: -10px;
+    padding: 8px 0px;
+    background-color: #F2F2F2;
+  }
+  .pop__card-wrap
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .pop__card
+  {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 13px;
+    width: 96%;
+  }
+  .pop__card img
+  {
+    width: 45%;
+    height: 135px;
+  }
+  .pop__text-wrap
+  {
+    font-size: 12px;
+    margin: 10px 20px;
+  }
+  
+  /* Acivities areas */
+  .activ
+  {
+    margin: 0px 0px 30px;
+    padding: 0px 20px;
+  }
+  .activ__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  .activ__card
+  {
+    width: 100%;
+    height: 190px;
+    margin-bottom: 20px;
+  }  
+  .activ__img--tall {  
+    height: 150px;   
+  }
+  #activ--2nd, #activ--3rd, #activ--5th, #activ--6th
+  {
+    height: 150px; 
+  }
+  .activ__card--stack {
+    background-color: white;
+    border-radius: 15px;
+    
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .activ__wrap--stack {
+    width: 100%;
+    /*border: 2px dotted purple;*/  
+  }
+ 
+  /*Foot Section*/
+  .foot__wrap{ 
+   display: flex;
+   flex-direction: column;
+   margin: 0px;
+  }
+  .foot__text-wrap
+  {
+    margin: 0px;
+  }  
+}
+
+
+
+
