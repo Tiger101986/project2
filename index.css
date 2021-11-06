@@ -1,25 +1,26 @@
-/*.div2 {
-  width: 300px;
-  height: 100px;
-  padding: 50px;
-  border: 1px solid red;
+/*
   box-sizing: border-box; Note: using box-sizing: border-box to make box looks properly for many form elements.
 } */
 html 
 {
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 body
 {
   font-family: Raleway;
-  font-size: 12px;
+  font-size: 1rem; /*changed font-size */
   margin: 0px;
-  padding: 0px;
+  padding: 0px;  
+}
+/* add page__wrap class to hidden overflow */
+.page__wrap
+{
+  overflow: hidden;
 }
  header
 {
-  padding: 0px 20px;
+  padding: 0px 20px; 
 }
 .nav {
   display: flex;
@@ -131,8 +132,8 @@ input
 
 .filter__text {
   /* border: 1px solid green; */
-  padding: 0 15px 0 5px;
-  font-size: 0.8rem;
+  padding: 0 15px 0 10px; /*changed padding 5px to 10px and font-size .8rem to 1rem*/
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -155,7 +156,7 @@ input
   margin-bottom: 10px; 
 }
 .info__icon
- {
+{
   border: 1px solid lightgrey;
   border-radius: 50%;
   padding: 3px 7px 0px;
@@ -164,8 +165,6 @@ input
   margin-bottom: 13px; /* use margin bottom to make circle "border-radius:50%" when it work with "display:inline-block;"*/
   margin-top: 3px;
 }
-
-
 
 .info__text 
 {
@@ -185,7 +184,7 @@ a
 .top-section-wrap {
   display: flex;
   justify-content: space-between;
-  padding: 0px 20px;
+  padding: 0px 10px; /*changed left & right padding  20px to 10px*/
 }
 .accom {
   background-color: #f2f2f2;
@@ -303,7 +302,7 @@ a
 
 .activ {
   margin-top: 10px;
-  padding: 10px 20px;
+  padding: 10px 10px; /*changed left & right padding  20px to 10px*/
   height: auto;
 }
 
@@ -385,13 +384,61 @@ a
 }
 
 /* Respondsive */
-/* Tablet*/
-@media all and (min-width: 401px) and (max-width: 775px)
-{
-
-  .nav .nav__link 
+/* Tablet , changed min-width: 401px t0 521px and max-width: 775px to 990px*/
+@media all and (min-width: 521px) and (max-width: 990px)
+{  
+  /*changed tablet navegation markup to look as the mobile markup*/
+  nav a:nth-child(1)
   {
-    margin-right: 0px;
+    margin: 0px;
+    order: 1;
+  }
+  nav a:nth-child(2)
+  {
+    order: 3;
+
+  }
+  nav a:nth-child(3)
+  {
+    order: 4;
+  }
+  nav a:nth-child(4)
+  {
+    order: 2;    
+  }
+  .nav 
+  {
+    flex-wrap: wrap;  
+  }
+  .nav a 
+  {
+    display: inline-block;
+    width: 40%;
+    padding-bottom: 15px;
+  }
+  .nav .nav__link
+  {
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: 3px solid gray;
+    margin: 0;
+    width: 50%;
+    padding: 15px 0px;
+  }
+
+  #signup
+  {
+    text-align: center;
+    margin-right: -50px;
+  }
+  .nav .logo-container
+  {
+    padding: 10px;
+  }
+  .nav__link:active {
+    border-bottom: 3px solid blue;
+    color: blue;
+    border-top: none;
   }
   .filter
   {
@@ -426,22 +473,19 @@ a
   {
     display: flex;
     flex-direction: column-reverse;  
-    padding: 0px;
+    padding: 10px;
   }
 
   .popular 
   {
     background-color: #6495ed;
     width: 95%; /* percentage width of parent container */
-    padding: 0px 20px 20px;
-    margin: 0px;
+    padding: 0px 20px ; /*  add right and left padding 20px */
   }  
   .pop__card
   {
     display: flex;
     flex-direction: column;
-    width: 97%;
-    margin-bottom: 0px;
   }
   .tablet__popcard
   {   
@@ -455,13 +499,12 @@ a
   {  
     width: 100%;
     border-radius: 15px 15px 0 0;
-    height: 160px;
+    height: 140px;  /*decrease height 160px to 140px */
   }
   .pop__card-wrap 
   {
     display: flex; /* default flex-direction: row */
     flex-flow: row; /* wraps the elements like words in a paragraph */
-    justify-content: space-between;
     height: 265px;
   }
   
@@ -483,7 +526,7 @@ a
   }
   .accom__card
   {
-    width: 48%;
+    width: 47%; /* decrease 1% of width */
     box-shadow: 5px 5px 5px darkgray;
   }
   .accom__card img
@@ -570,6 +613,7 @@ a
   /* Tablet Foot Section */
   .foot__wrap 
   {
+    font-size: 13px;
     margin-top: 0px;
     justify-content: space-between;
   }
@@ -578,7 +622,8 @@ a
     margin-left: 0px;
   }
 }
-@media all and (min-width: 375px) and (max-width: 400px)
+/* changed min-width 375px to 320px and max-width 400px to 990px */
+@media all and (min-width: 320px) and (max-width: 520px)
 {
   body
   {
@@ -620,6 +665,7 @@ a
   }
   .nav .nav__link
   {
+    font-size: 1rem; /* add font size 1rem */
     text-align: center;
     border-bottom: 3px solid gray;
     margin: 0;
@@ -652,14 +698,14 @@ a
   }
   .icon1
   {
-    font-size: 1rem;
+    font-size: 0.8rem; /* changed icon font size 1rem to 0.8rem */
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
     padding: 13px 18px;
   }
   input
   {
-    font-size: 1rem;
+    font-size: 0.8rem; /* changed input font size 1rem to 0.8rem */
     padding: 11px;
     border: 1px solid #F2F2F2;
     margin-left: -5px; 
@@ -703,7 +749,7 @@ a
   }
   .filter__btn
   {
-    margin: 3px 3px 10px 0;
+    margin: 3px 25px 10px 0;/* changed right padding 3px to 25px */
   }
   #filter__text
   {
@@ -739,7 +785,7 @@ a
   section div button:nth-child(3)
   {
     order: 2;
-    margin-left: 20px;
+    /* take off margin-left: 20px; */
   }
   section div button:nth-child(4)
   {

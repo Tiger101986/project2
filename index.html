@@ -14,294 +14,295 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   </head>
 	<body>
-    <header> <!-- Starting of Header-->
-      <!-- navigations or directions -->
- <!--      <nav class="contain">      
-        <div> <a href="#accomodations"> Accommodations </a> </div>
-        <div> <a href="#activities"> Activities </a> </div> 
-        <div> <a href="#"> Sign Up </a> </div> 
-      </nav> -->
+    <div class="page__wrap"> <!-- add <div> to wrap the whole webpage to hidden overflow -->
+      <header> <!-- Starting of Header-->
+        <!-- navigations or directions -->
+  <!--      <nav class="contain">      
+          <div> <a href="#accomodations"> Accommodations </a> </div>
+          <div> <a href="#activities"> Activities </a> </div> 
+          <div> <a href="#"> Sign Up </a> </div> 
+        </nav> -->
 
-      <nav class="nav">
-        <a href="#" class="logo-container"><img src="images/Reservia.svg" alt=""></a>
-        <a class="nav__link" href="#accomodations">Accomodations</a>
-        <a class="nav__link" href="#activities">Activities</a>
-        <a href="" id="signup">Sign Up</a>
-      </nav>
+        <nav class="nav">
+          <a href="#" class="logo-container"><img src="images/Reservia.svg" alt=""></a>
+          <a class="nav__link" href="#accomodations">Accomodations</a>
+          <a class="nav__link" href="#activities">Activities</a>
+          <a href="" id="signup">Sign Up</a>
+        </nav>
 
 
-      <!-- Logo image -->
-      <!-- <img  src="C:\Users\Christina\images\Reservia.svg" alt="Company logo"> -->
-      <!-- <a href="#" class="logo-container"><img src="images/Reservia.svg" alt="Company Logo"></a> -->
-      <h2>  Find a place for your dream vacation </h2>
-      <p> Downtown or in nature </p>      
-      <!-- Create search box -->
-      <div class="search-box">
-      <!-- put font awsome icon map in solid picture -->
-        <i class="fas fa-map-marker-alt icon1"></i>
-      <!-- typing search box as text -->
-        <input type="text" placeholder="Marseille, France"/> 
-      <!-- search engine box as submitting -->
-        <button type="button" class="desktop--btn"> Search </button> 
-        <button type="button" class="mobile--btn"> <i class="fas fa-search icon2"> </i></button> 
-      </div>  
+        <!-- Logo image -->
+        <!-- <img  src="C:\Users\Christina\images\Reservia.svg" alt="Company logo"> -->
+        <!-- <a href="#" class="logo-container"><img src="images/Reservia.svg" alt="Company Logo"></a> -->
+        <h2>  Find a place for your dream vacation </h2>
+        <p> Downtown or in nature </p>      
+        <!-- Create search box -->
+        <div class="search-box">
+        <!-- put font awsome icon map in solid picture -->
+          <i class="fas fa-map-marker-alt icon1"></i> 
+        <!-- typing search box as text -->
+          <input type="text" placeholder="Marseille, France"/> 
+        <!-- search engine box as submitting -->
+          <button type="button" class="desktop--btn"> Search </button> 
+          <button type="button" class="mobile--btn"> <i class="fas fa-search icon2"> </i></button> 
+        </div>  
 
-      <!-- Create filter boxes -->
-      <!-- TODO: put search field here -->
+        <!-- Create filter boxes -->
+        <!-- TODO: put search field here -->
 
-      <!-- filters buttons -->
-      <!-- we will make these buttons BUT they won't be attached to functionality -->
-      <!-- buttons needs to be inline in desktop layout: flexbox? -->
-      <section class="filter">
-        <h2 class="filter__heading">Filters</h2>
+        <!-- filters buttons -->
+        <!-- we will make these buttons BUT they won't be attached to functionality -->
+        <!-- buttons needs to be inline in desktop layout: flexbox? -->
+        <section class="filter">
+          <h2 class="filter__heading">Filters</h2>
 
-        <div class="filter__wrap">
-          <button class="filter__btn">
-            <i class="fas fa-money-bill-wave filter__icon"></i>
-            <span class="filter__text">Low cost</span>
-          </button>
+          <div class="filter__wrap">
+            <button class="filter__btn">
+              <i class="fas fa-money-bill-wave filter__icon"></i>
+              <span class="filter__text">Low cost</span>
+            </button>
 
-          <button class="filter__btn">
-            <i class="fas fa-child filter__icon"></i>
-            <span class="filter__text">Family-friendly</span>
-          </button>
+            <button class="filter__btn">
+              <i class="fas fa-child filter__icon"></i>
+              <span class="filter__text">Family-friendly</span>
+            </button>
 
-          <button class="filter__btn">
-            <i class="fas fa-heart filter__icon"></i>
-            <span class="filter__text">Romantic</span>
-          </button>
+            <button class="filter__btn">
+              <i class="fas fa-heart filter__icon"></i>
+              <span class="filter__text">Romantic</span>
+            </button>
 
-          <button class="filter__btn" >
-            <i class="fas fa-dog  filter__icon"></i>
-            <span class="filter__text" id="filter__text">Pets allowed</span>
-          </button>
+            <button class="filter__btn" >
+              <i class="fas fa-dog  filter__icon"></i>
+              <span class="filter__text" id="filter__text">Pets allowed</span>
+            </button>
+          </div>
+        </section>
+        
+        <!-- Stacking background with icon.
+          <span class="icon-boxes fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x icon-background1"></i>
+          <i class="fas fa-child fa-stack-1x"></i>
+          </span> 
+          <i class="fas fa-money-bill-wave circle-icon"></i>  
+        -->
+
+        <!-- put font awsome icon map in solid picture -->
+        <div class="info"> 
+          <i class="fas fa-info info__icon"></i> 
+          <span class="info__text">More than 500 accommodations are available in this city </span>
         </div>
-      </section>
-      
-      <!-- Stacking background with icon.
-        <span class="icon-boxes fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x icon-background1"></i>
-        <i class="fas fa-child fa-stack-1x"></i>
-        </span> 
-        <i class="fas fa-money-bill-wave circle-icon"></i>  
-      -->
-
-      <!-- put font awsome icon map in solid picture -->
-      <div class="info"> 
-        <i class="fas fa-info info__icon"></i> 
-        <span class="info__text">More than 500 accommodations are available in this city </span>
-      </div>
-      
-    </header> <!-- Ending of Header-->   
-       
-    <main> <!-- Starting of Main-->  
-      <div class="top-section-wrap">
-        <section class="accom" id="accomodations">  
-          <h2 > Accommodations in Marseille </h2>
-          <div class="accom__card-wrap">
-            <section  class="accom__card">
-              <a  href="#" target="blank">
-                <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere" />
-                <div class="accom__text-wrap">
-                  <h3> Auberge la Cannebiere</h3>
-                  <P>Night starting at 25&euro; </p>
-                  <div>
-                    <i class="fas fa-star starscolor"></i>
-                    <i class="fas fa-star starscolor"></i>
-                    <i class="fas fa-star starscolor"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+        
+      </header> <!-- Ending of Header-->   
+        
+      <main> <!-- Starting of Main-->  
+        <div class="top-section-wrap">
+          <section class="accom" id="accomodations">  
+            <h2 > Accommodations in Marseille </h2>
+            <div class="accom__card-wrap">
+              <section  class="accom__card">
+                <a  href="#" target="blank">
+                  <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere" />
+                  <div class="accom__text-wrap">
+                    <h3> Auberge la Cannebiere</h3>
+                    <P>Night starting at 25&euro; </p>
+                    <div>
+                      <i class="fas fa-star starscolor"></i>
+                      <i class="fas fa-star starscolor"></i>
+                      <i class="fas fa-star starscolor"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </section>
-                 
-            <section  class="accom__card">
-              <a  href="#" target="blank">
-                <img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg"  alt="Hotel du port"/>
-                <div class="accom__text-wrap">
-                  <h3>Hotel du port </h3>
-                  <p>Night starting at 52&euro; </p>
-                  <div>
-                    <i class="fas fa-star starscolor"></i>
-                    <i class="fas fa-star starscolor"></i>
-                    <i class="fas fa-star starscolor"></i>
-                    <i class="fas fa-star starscolor"></i>
-                    <i class="fas fa-star starscolor"></i>
+                </a>
+              </section>
+                  
+              <section  class="accom__card">
+                <a  href="#" target="blank">
+                  <img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg"  alt="Hotel du port"/>
+                  <div class="accom__text-wrap">
+                    <h3>Hotel du port </h3>
+                    <p>Night starting at 52&euro; </p>
+                    <div>
+                      <i class="fas fa-star starscolor"></i>
+                      <i class="fas fa-star starscolor"></i>
+                      <i class="fas fa-star starscolor"></i>
+                      <i class="fas fa-star starscolor"></i>
+                      <i class="fas fa-star starscolor"></i>
+                    </div> 
+                  </div>
+                </a>  
+              </section>    
+
+              <section  class="accom__card">  
+                <a  href="#" target="blank">
+                  <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg"  alt="Les mouettes hotel"/>
+                  <div class="accom__text-wrap">
+                    <h3> Les mouettes hotel </h3>
+                    <p> Night starting at 76&euro; </p>
+                    <div>
+                      <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="far fa-star"></i>
+                    </div>
+                  </div>  
+                </a>
+              </section>
+
+              <section  class="accom__card"> 
+                <a  href="#" target="blank">
+                  <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg"  alt="Hotel de la mer"/>
+                  <div class="accom__text-wrap">
+                    <h3> Hotel de la mer </h3>
+                    <p>Night starting at 46&euro;</p>   
+                    <div>  
+                      <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                  </div>  
+                </a>
+              </section>
+
+              <section  class="accom__card">  
+                <a  href="#" target="blank">
+                  <img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
+                  <div class="accom__text-wrap">
+                    <h3> Auberge Le Panier </h3>
+                    <p> Night starting at 23&euro; </p>  
+                    <div> 
+                      <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="far fa-star"></i>
+                    </div> 
                   </div> 
-                </div>
-              </a>  
-            </section>    
+                </a>    
+              </section>  
 
-            <section  class="accom__card">  
-              <a  href="#" target="blank">
-                <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg"  alt="Les mouettes hotel"/>
-                <div class="accom__text-wrap">
-                  <h3> Les mouettes hotel </h3>
-                  <p> Night starting at 76&euro; </p>
-                  <div>
-                    <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="far fa-star"></i>
+              <section  class="accom__card"> 
+                <a  href="#" target="blank">
+                  <img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina">
+                  <div class="accom__text-wrap">
+                    <h3> Hotel chez Amina </h3>
+                    <p>Night starting at 96&euro;</p>  
+                    <div>
+                      <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i>
+                    </div>
                   </div>
-                </div>  
-              </a>
-            </section>
-
-            <section  class="accom__card"> 
-              <a  href="#" target="blank">
-                <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg"  alt="Hotel de la mer"/>
-                <div class="accom__text-wrap">
-                  <h3> Hotel de la mer </h3>
-                  <p>Night starting at 46&euro;</p>   
-                  <div>  
-                    <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                  </div>
-                </div>  
-              </a>
-            </section>
-
-            <section  class="accom__card">  
-              <a  href="#" target="blank">
-                <img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
-                <div class="accom__text-wrap">
-                  <h3> Auberge Le Panier </h3>
-                  <p> Night starting at 23&euro; </p>  
-                  <div> 
-                    <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="far fa-star"></i>
-                  </div> 
-                </div> 
-              </a>    
-            </section>  
-
-            <section  class="accom__card"> 
-              <a  href="#" target="blank">
-                <img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina">
-                <div class="accom__text-wrap">
-                  <h3> Hotel chez Amina </h3>
-                  <p>Night starting at 96&euro;</p>  
-                  <div>
+                </a>  
+              </section>      
+            </div>
+            <h3> Show more </h3>          
+          </section>
+      
+          <section class="popular">
+            <div class="pop__heading">
+              <h2> Most Popular </h2> 
+              <i class="fas fa-chart-line"></i>
+            </div>  
+            <div class="pop__card-wrap">
+              <section class="pop__card tablet__popcard">
+                <img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel"/>
+                <div class="pop__text-wrap">
+                  <h3> Morning Sun Hotel </h3>
+                  <p > Night starting at 128&euro;</p>
+                  <div class="pop__text--wrap-margin">
                     <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i>
                   </div>
                 </div>
-              </a>  
-            </section>      
-          </div>
-          <h3> Show more </h3>          
-        </section>
-     
-        <section class="popular">
-          <div class="pop__heading">
-            <h2> Most Popular </h2> 
-            <i class="fas fa-chart-line"></i>
-          </div>  
-          <div class="pop__card-wrap">
-            <section class="pop__card tablet__popcard">
-              <img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel"/>
-              <div class="pop__text-wrap">
-                <h3> Morning Sun Hotel </h3>
-                <p > Night starting at 128&euro;</p>
-                <div class="pop__text--wrap-margin">
-                  <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i>
+              </section>
+
+              <section class="pop__card tablet__popcard2">  
+                <img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg"  alt="Au cceur de leau Bed and Breakfast"/>
+                <div class="pop__text-wrap">
+                  <h3> Au cceur de leau Bed and Breakfast </h3>
+                  <p> Night starting at 71&euro;</p>
+                  <div class="pop__text--wrap-margin">
+                    <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="far fa-star"></i>
+                  </div>
                 </div>
-              </div>
-            </section>
+              </section> 
 
-            <section class="pop__card tablet__popcard2">  
-              <img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg"  alt="Au cceur de leau Bed and Breakfast"/>
-              <div class="pop__text-wrap">
-                <h3> Au cceur de leau Bed and Breakfast </h3>
-                <p> Night starting at 71&euro;</p>
-                <div class="pop__text--wrap-margin">
-                  <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="far fa-star"></i>
-                </div>
-              </div>
-            </section> 
+              <section class="pop__card tablet__popcard">                
+                <img src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg"  alt="Tout bleu et Blanc"/> 
+                <div class="pop__text-wrap">
+                  <h3> Tout bleu et Blanc Hotel</h3>
+                  <p>Night starting at 68&euro;</p>
+                  <div class="pop__text--wrap-margin">
+                    <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="far fa-star"></i>
+                  </div>   
+                </div>                 
+              </section>     
+            </div>
+          </section> 
+        </div>  
 
-            <section class="pop__card tablet__popcard">                
-              <img src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg"  alt="Tout bleu et Blanc"/> 
-              <div class="pop__text-wrap">
-                <h3> Tout bleu et Blanc Hotel</h3>
-                <p>Night starting at 68&euro;</p>
-                <div class="pop__text--wrap-margin">
-                  <i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="fas fa-star starscolor"></i><i class="far fa-star"></i>
-                </div>   
-              </div>                 
-            </section>     
-          </div>
-        </section> 
-      </div>  
-
-      <section class="activ" id="activities">
-        <h2>Activities in Marseilles</h2>
-        <div class="activ__wrap">
-          <section class="activ__card tablet__activcard1"> 
-            <a  href="#" target="blank">
-              <img src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"  alt="Old port"   class="activ__img activ__img--tall"/>
-              <h3 class="activ__title--card" >Old port  </h3>
-            </a>
-          </section>
-          <div class="activ__wrap--stack tablet__activcard2"> 
-            <section class="activ__card--stack">  
+        <section class="activ" id="activities">
+          <h2>Activities in Marseilles</h2>
+          <div class="activ__wrap">
+            <section class="activ__card tablet__activcard1"> 
               <a  href="#" target="blank">
-                <img src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg"  alt="Pomegues Fort " class="activ__img"
-                id="activ--2nd"/>
-                <h3 class="activ__title--card"> Pomegues Fort </h3>
+                <img src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"  alt="Old port"   class="activ__img activ__img--tall"/>
+                <h3 class="activ__title--card" >Old port  </h3>
+              </a>
+            </section>
+            <div class="activ__wrap--stack tablet__activcard2"> 
+              <section class="activ__card--stack">  
+                <a  href="#" target="blank">
+                  <img src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg"  alt="Pomegues Fort " class="activ__img"
+                  id="activ--2nd"/>
+                  <h3 class="activ__title--card"> Pomegues Fort </h3>
+                </a> 
+              </section>
+              <section class="activ__card--stack">
+                <a  href="#" target="blank">
+                  <img src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"  alt="Frioul Island" class="activ__img"
+                  id="activ--3rd"/>
+                  <h3 class="activ__title--card"> Frioul Island </h3>
+                </a>
+              </section>  
+            </div> 
+            <section class="activ__card tablet__activcard3"> 
+              <a  href="#" target="blank">
+                <img src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"  alt="Calanques National Park" class="activ__img activ__img--tall"/>  
+                <h3 class="activ__title--card"> Calanques National Park </h3>
               </a> 
-            </section>
-            <section class="activ__card--stack">
-              <a  href="#" target="blank">
-                <img src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"  alt="Frioul Island" class="activ__img"
-                id="activ--3rd"/>
-                <h3 class="activ__title--card"> Frioul Island </h3>
-              </a>
             </section>  
-          </div> 
-          <section class="activ__card tablet__activcard3"> 
-            <a  href="#" target="blank">
-              <img src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"  alt="Calanques National Park" class="activ__img activ__img--tall"/>  
-              <h3 class="activ__title--card"> Calanques National Park </h3>
-            </a> 
-          </section>  
-          <div class="activ__wrap--stack tablet__activcard4">
-            <section class="activ__card--stack">
-              <a  href="#" target="blank">
-                <img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Deme-de-la-Garde"  class="activ__img"
-                id="activ--5th"/>
-                <h3 class="activ__title--card"> Notre-Deme-de-la-Garde </h3>
-              </a>
-            </section> 
-            <section class="activ__card--stack"> 
-              <a  href="#" target="blank">
-                <img src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park" class="activ__img"
-                id="activ--6th"/>
-                <h3 class="activ__title--card"> Longchamp Park </h3>
-              </a>  
-            </section> 
-          </div>  
-        </div>   
-      </section>  
-    </main> <!-- Ending of Main-->
-          
-    <footer >  <!-- Starting of footer--> 
-      <div class="foot__wrap">
-        <section>
-          <h3> About </h3>
-          <p> Site Map </p>
-          <p> General Terms and Conditions </p>
-          <p> Data and Privacy </p>
-        </section> 
-        <section class="foot__text-wrap"> 
-          <h3> Our Accommodations </h3>
-          <p> Quality Assessment </p>
-          <p> You have a hotel? </p>
-        </section>
-        <section class="foot__text-wrap">
-          <h3> Assistance </h3>
-          <p> Help Desk </p>
-          <p> Contact Us </p>
-        </section>
-      </div>  
-    </footer> <!-- Ending of Footer-->
-       
+            <div class="activ__wrap--stack tablet__activcard4">
+              <section class="activ__card--stack">
+                <a  href="#" target="blank">
+                  <img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Deme-de-la-Garde"  class="activ__img"
+                  id="activ--5th"/>
+                  <h3 class="activ__title--card"> Notre-Deme-de-la-Garde </h3>
+                </a>
+              </section> 
+              <section class="activ__card--stack"> 
+                <a  href="#" target="blank">
+                  <img src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park" class="activ__img"
+                  id="activ--6th"/>
+                  <h3 class="activ__title--card"> Longchamp Park </h3>
+                </a>  
+              </section> 
+            </div>  
+          </div>   
+        </section>  
+      </main> <!-- Ending of Main-->
+            
+      <footer >  <!-- Starting of footer--> 
+        <div class="foot__wrap">
+          <section>
+            <h3> About </h3>
+            <p> Site Map </p>
+            <p> General Terms and Conditions </p>
+            <p> Data and Privacy </p>
+          </section> 
+          <section class="foot__text-wrap"> 
+            <h3> Our Accommodations </h3>
+            <p> Quality Assessment </p>
+            <p> You have a hotel? </p>
+          </section>
+          <section class="foot__text-wrap">
+            <h3> Assistance </h3>
+            <p> Help Desk </p>
+            <p> Contact Us </p>
+          </section>
+        </div>  
+      </footer> <!-- Ending of Footer-->
+    </div>   
   </body>  
 </html>
 	
