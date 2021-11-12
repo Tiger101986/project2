@@ -679,6 +679,8 @@ a
   .nav 
   {
     flex-wrap: wrap;  
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .nav a 
   {
