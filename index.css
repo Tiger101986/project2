@@ -53,7 +53,8 @@ body
 
 div a:hover
 {
-  color: #F2F2F2;
+  border-top: 3px solid blue;
+  color: gray;
 }
 /* Create search box */
 .search-box
