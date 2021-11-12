@@ -768,7 +768,7 @@ a
   .filter__heading
   {
     text-align: start;
-    
+    margin-bottom: 10px;
   }
   .filter__btn
   {
