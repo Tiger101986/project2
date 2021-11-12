@@ -20,7 +20,7 @@ body
 }
  header
 {
-  padding: 0px 20px; 
+  padding: 0px 0px; /* changed RL padding 20px to 0px */
 }
 .nav {
   display: flex;
@@ -53,8 +53,8 @@ body
 
 div a:hover
 {
-  border-top: 3px solid blue;
-  color: gray;
+  border-top: 3px solid blue; /* added border-top*/
+  color: gray; /* changed color*/
 }
 /* Create search box */
 .search-box
