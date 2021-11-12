@@ -470,6 +470,10 @@ a
     margin-right: 0px;
     margin-left: 20px;
   }
+  .filter__wrap
+  {
+    margin-left: 20px;
+  }
   .filter__btn
   {
     margin: 10px 25px 10px 0;
