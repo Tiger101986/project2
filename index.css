@@ -114,6 +114,8 @@ input
   display: flex;
   /* default font-size on browsers is usually 16px */
   margin-bottom: 0px; /*  maybe need to remove out*/
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
