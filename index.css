@@ -459,6 +459,11 @@ a
     color: blue;
     border-top: none;
   }
+  div a:hover
+  {
+    border-bottom: none;
+    border-top: none;
+  }
   .filter
   {
     display: flex;
@@ -698,7 +703,16 @@ a
     width: 50%;
     padding: 15px 0px;
   }
-
+  .nav__link:active {
+    border-bottom: 3px solid blue;
+    color: blue;
+    border-top: none;
+  }
+  div a:hover
+  {
+    border-bottom: none;
+    border-top: none;
+  }
   #signup
   {
     text-align: center;
@@ -708,12 +722,7 @@ a
   {
     padding: 10px;
   }
-  .nav__link:active {
-    border-bottom: 3px solid blue;
-    color: blue;
-    border-top: none;
-  }
-  
+
 
   /* Search Button Section */
   
